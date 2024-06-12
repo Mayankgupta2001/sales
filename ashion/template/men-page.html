@@ -1,0 +1,413 @@
+{% include "header.html" %}
+
+      <!-- slider start -->
+      <div id="carouselExampleSlidesOnly" class="carousel slide carousel-fade" data-bs-ride="carousel">
+        <div class="carousel-inner">
+          {% for a in posterimgData %}
+          <div class="carousel-item active" data-bs-interval="2000">
+            <img src="{{a.poster_img}}" class="d-block w-100" alt="...">
+          </div>
+          {% endfor %}
+        </div>
+      </div>
+      <!-- slider end -->
+      <div class="container">
+        <div class="row text-center mt-5" style="background: rgb(36,0,0);
+      background: linear-gradient(90deg, rgba(36,0,0,1) 0%, rgba(252,252,252,1) 0%, rgba(236,255,79,1) 46%, rgba(255,255,255,1) 100%);">
+        <h2>FOR MEN</h2>
+      </div>
+      </div>
+    
+      <!-- filter start -->
+      
+<div class="container mt-4">
+    <div class="row">
+      {% for a in offerimgData %}
+        <div class="col-lg-12 col-md-12 col-sm-12 mt-2 text-center  filter-img " >
+            <img src="{{a.offer_img}}" alt="">
+        </div>
+        {% endfor %}
+      </div>  
+
+
+
+    <div class="row">
+      <button style="color: #f8f9fc; font-size:20px; font-weight: 700; font-family:'Trebuchet MS'; background-color: #1c2331; " class="btn text-start btn-primary" type="button" data-bs-toggle="offcanvas" data-bs-target="#offcanvasWithBothOptions" aria-controls="offcanvasWithBothOptions">Apply Filters</button>
+
+      <div class="offcanvas offcanvas-start" data-bs-scroll="true" tabindex="-1" id="offcanvasWithBothOptions" aria-labelledby="offcanvasWithBothOptionsLabel">
+        <div class="offcanvas-header">
+          <h5 class="offcanvas-title" id="offcanvasWithBothOptionsLabel">Add Filters For Better Results</h5>
+          <button type="button" class="btn-close" data-bs-dismiss="offcanvas" aria-label="Close"></button>
+        </div>
+        <div class="offcanvas-body">
+          <div class="filter-section">
+            <div class="filter-option">
+              <h3>Gender</h3>
+              <label><input type="radio" name="gender" value="all" checked>All</label>
+              <label><input type="radio" name="gender" value="male">Male</label>
+              <label><input type="radio" name="gender" value="female">Female</label>
+            </div>
+            <div class="filter-option">
+              <h3>Colors</h3>
+              <label><input type="checkbox" name="color" value="red">Red</label>
+              <label><input type="checkbox" name="color" value="blue">Blue</label>
+              <label><input type="checkbox" name="color" value="green">Green</label>
+            </div>
+            <div class="filter-option">
+              <h3>Price Range</h3>
+              <input type="range" name="price" min="100" max="1000" step="2">
+            </div>
+          
+            <div class="filter-option">
+              <h3>Size</h3>
+              <label><input type="checkbox" name="size" value="small">Small</label>
+              <label><input type="checkbox" name="size" value="medium">Medium</label>
+              <label><input type="checkbox" name="size" value="large">Large</label>
+            </div>
+            <div class="filter-option">
+              <h3>Fabric</h3>
+              <label><input type="checkbox" name="fabric" value="cotton">Cotton</label>
+              <label><input type="checkbox" name="fabric" value="polyester">Polyester</label>
+              <label><input type="checkbox" name="fabric" value="linen">Linen</label>
+            </div>
+            <div class="filter-option">
+              <h3>Discount</h3>
+              <select name="discount">
+                <option value="0-10%">0-10%</option>
+                <option value="11-20%">11-20%</option>
+                <option value="21-30%">21-30%</option>
+               
+              </select>
+            </div>
+            <button class="btn bg-dark text-white w-100">Apply</button>
+          </div>
+        </div>
+      </div>
+    </div>
+</div>
+  <hr>
+      <!-- filter end -->
+
+      <!-- men-slider -->
+    <div class="container men-women-slider">
+      <div id="carouselExampleInterval" class="carousel slide "  data-bs-ride="carousel">
+        <div class="carousel-inner  ">
+          <div class="carousel-item active" data-bs-interval="2000" >
+           <div class="row">
+            <div  class="col-lg-4 col-md-4 col-sm-12 d-flex justify-content-start  " >
+              <div class="a-card" onclick="window.location.href='product-page.html'">
+                <div class="a-card-img"> <img src="/static/images/index-men-women-img/m2.jpg" alt=""> </div>
+                <div class="a-card-info">
+                 <p class="a-text-title">Product title </p>
+                 <p class="a-text-body">Product description andd details</p>
+                </div>
+                 <div class="a-card-footer">
+                  <span class="a-text-title">₹ 1499.49</span>
+                 </div>
+               </div>
+            </div>
+            <div class="col-lg-4 col-md-4 col-sm-12 d-flex justify-content-center ">
+              <div class="a-card" onclick="window.location.href='product-page.html'">
+                <div class="a-card-img"> <img src="/static/images/index-men-women-img/m3.jpg" alt=""> </div>
+                <div class="a-card-info">
+                 <p class="a-text-title">Product title </p>
+                 <p class="a-text-body">Product description andd etails</p>
+                </div>
+                 <div class="a-card-footer">
+                  <span class="a-text-title">₹ 1499.49</span>
+                 </div>
+               </div>
+            </div>
+            <div class="col-lg-4 col-md-4 col-sm-12 d-flex justify-content-center ">
+              <div class="a-card" onclick="window.location.href='product-page.html'">
+                <div class="a-card-img"> <img src="/static/images/index-men-women-img/m4.jpg" alt=""> </div>
+                <div class="a-card-info">
+                 <p class="a-text-title">Product title </p>
+                 <p class="a-text-body">Product description andd etails</p>
+                </div>
+                 <div class="a-card-footer">
+                  <span class="a-text-title">₹ 1499.49</span>
+                 </div>
+               </div>
+            </div>
+           </div>
+          </div>
+          <div class="carousel-item" data-bs-interval="2000">
+            <div class="row">
+              <div class="col-lg-4 col-md-4 col-sm-12 d-flex justify-content-start">
+                <div class="a-card" onclick="window.location.href='product-page.html'">
+                  <div class="a-card-img"> <img src="/static/images/index-men-women-img/m6.jpg" alt=""> </div>
+                  <div class="a-card-info">
+                   <p class="a-text-title">Product title </p>
+                   <p class="a-text-body">Product description andd etails</p>
+                  </div>
+                   <div class="a-card-footer">
+                    <span class="a-text-title">₹ 1499.49</span>
+                   </div>
+                 </div>
+              </div>
+              <div class="col-lg-4 col-md-4 col-sm-12 d-flex justify-content-center">
+                <div class="a-card" onclick="window.location.href='product-page.html'">
+                  <div class="a-card-img"> <img src="/static/images/index-men-women-img/m8.jpg" alt=""> </div>
+                  <div class="a-card-info">
+                   <p class="a-text-title">Product title </p>
+                   <p class="a-text-body">Product description andd etails</p>
+                  </div>
+                   <div class="a-card-footer">
+                    <span class="a-text-title">₹ 1499.49</span>
+                   </div>
+                 </div>
+              </div>
+              <div class="col-lg-4 col-md-4 col-sm-12 d-flex justify-content-center">
+                <div class="a-card" onclick="window.location.href='product-page.html'">
+                  <div class="a-card-img"> <img src="/static/images/index-men-women-img/m7.jpg" alt=""> </div>
+                  <div class="a-card-info">
+                   <p class="a-text-title">Product title </p>
+                   <p class="a-text-body">Product description andd etails</p>
+                  </div>
+                   <div class="a-card-footer">
+                    <span class="a-text-title">₹ 1499.49</span>
+                   </div>
+                 </div>
+              </div>
+             </div>
+          </div>
+        </div>
+      </div>
+    </div>
+    <hr>
+      <!-- men slider end  -->
+
+      <!-- product start -->
+      <div class="container mt-5">
+        <div class="row">
+          {% for a in mencollectionData %}
+            <div class="col-lg-3 col-md-3 col-sm-6">
+                <div class="a-card" onclick="window.location.href='product-page.html'">
+                    <div class="a-card-img"> <img src="{{a.product_img}}" alt=""> </div>
+                    <div class="a-card-info">
+                     <p class="a-text-title"> {{a.product_title}}</p>
+                     <p class="a-text-body">{{a.product_des}}</p>
+                    </div>
+                     <div class="a-card-footer">
+                      <span class="a-text-title">{{a.product_price}}</span>
+                     </div>
+                   </div>
+            </div>
+            {% endfor %}
+            {% comment %} <div class="col-lg-3 col-md-3 col-sm-6">
+                <div class="a-card" onclick="window.location.href='product-page.html'">
+                    <div class="a-card-img"> <img src="/static/images/men/img2.jpg" alt=""> </div>
+                    <div class="a-card-info">
+                     <p class="a-text-title">Product title </p>
+                     <p class="a-text-body">Product description andd etails</p>
+                    </div>
+                     <div class="a-card-footer">
+                      <span class="a-text-title">₹ 1499.49</span>
+                     </div>
+                   </div>
+            </div>
+            <div class="col-lg-3 col-md-3 col-sm-6">
+                <div class="a-card" onclick="window.location.href='product-page.html'">
+                    <div class="a-card-img"> <img src="/static/images/men/img3.jpg" alt=""> </div>
+                    <div class="a-card-info">
+                     <p class="a-text-title">Product title </p>
+                     <p class="a-text-body">Product description andd etails</p>
+                    </div>
+                     <div class="a-card-footer">
+                      <span class="a-text-title">₹ 1499.49</span>
+                     </div>
+                   </div>
+            </div>
+            <div class="col-lg-3 col-md-3 col-sm-6">
+                <div class="a-card" onclick="window.location.href='product-page.html'">
+                    <div class="a-card-img"> <img src="/static/images/men/img4.jpg" alt=""> </div>
+                    <div class="a-card-info">
+                     <p class="a-text-title">Product title </p>
+                     <p class="a-text-body">Product description andd etails</p>
+                    </div>
+                     <div class="a-card-footer">
+                      <span class="a-text-title">₹ 1499.49</span>
+                     </div>
+                   </div>
+            </div> {% endcomment %}
+        </div>
+        {% comment %} <div class="row">
+            <div class="col-lg-3 col-md-3 col-sm-6">
+                <div class="a-card" onclick="window.location.href='product-page.html'">
+                    <div class="a-card-img"> <img src="/static/images/men/img5.jpg" alt=""> </div>
+                    <div class="a-card-info">
+                     <p class="a-text-title">Product title </p>
+                     <p class="a-text-body">Product description andd etails</p>
+                    </div>
+                     <div class="a-card-footer">
+                      <span class="a-text-title">₹ 1499.49</span>
+                     </div>
+                   </div>
+            </div>
+            <div class="col-lg-3 col-md-3 col-sm-6">
+                <div class="a-card" onclick="window.location.href='product-page.html'">
+                    <div class="a-card-img"> <img src="/static/images/men/img6.jpg" alt=""> </div>
+                    <div class="a-card-info">
+                     <p class="a-text-title">Product title </p>
+                     <p class="a-text-body">Product description andd etails</p>
+                    </div>
+                     <div class="a-card-footer">
+                      <span class="a-text-title">₹ 1499.49</span>
+                     </div>
+                   </div>
+            </div>
+            <div class="col-lg-3 col-md-3 col-sm-6">
+                <div class="a-card" onclick="window.location.href='product-page.html'">
+                    <div class="a-card-img"> <img src="/static/images/men/img7.jpg" alt=""> </div>
+                    <div class="a-card-info">
+                     <p class="a-text-title">Product title </p>
+                     <p class="a-text-body">Product description andd etails</p>
+                    </div>
+                     <div class="a-card-footer">
+                      <span class="a-text-title">₹ 1499.49</span>
+                     </div>
+                   </div>
+            </div>
+            <div class="col-lg-3 col-md-3 col-sm-6">
+                <div class="a-card" onclick="window.location.href='product-page.html'">
+                    <div class="a-card-img"> <img src="/static/images/men/img8.jpg" alt=""> </div>
+                    <div class="a-card-info">
+                     <p class="a-text-title">Product title </p>
+                     <p class="a-text-body">Product description andd etails</p>
+                    </div>
+                     <div class="a-card-footer">
+                      <span class="a-text-title">₹ 1499.49</span>
+                     </div>
+                   </div>
+            </div>
+        </div>
+        <div class="row">
+            <div class="col-lg-3 col-md-3 col-sm-6">
+                <div class="a-card" onclick="window.location.href='product-page.html'">
+                    <div class="a-card-img"> <img src="/static/images/men/img9.jpg" alt=""> </div>
+                    <div class="a-card-info">
+                     <p class="a-text-title">Product title </p>
+                     <p class="a-text-body">Product description andd etails</p>
+                    </div>
+                     <div class="a-card-footer">
+                      <span class="a-text-title">₹ 1499.49</span>
+                     </div>
+                   </div>
+            </div>
+            <div class="col-lg-3 col-md-3 col-sm-6">
+                <div class="a-card" onclick="window.location.href='product-page.html'">
+                    <div class="a-card-img"> <img src="/static/images/men/img10.jpg" alt=""> </div>
+                    <div class="a-card-info">
+                     <p class="a-text-title">Product title </p>
+                     <p class="a-text-body">Product description andd etails</p>
+                    </div>
+                     <div class="a-card-footer">
+                      <span class="a-text-title">₹ 1499.49</span>
+                     </div>
+                   </div>
+            </div>
+            <div class="col-lg-3 col-md-3 col-sm-6">
+                <div class="a-card" onclick="window.location.href='product-page.html'">
+                    <div class="a-card-img"> <img src="/static/images/men/img11.jpg" alt=""> </div>
+                    <div class="a-card-info">
+                     <p class="a-text-title">Product title </p>
+                     <p class="a-text-body">Product description andd etails</p>
+                    </div>
+                     <div class="a-card-footer">
+                      <span class="a-text-title">₹ 1499.49</span>
+                     </div>
+                   </div>
+            </div>
+            <div class="col-lg-3 col-md-3 col-sm-6">
+                <div class="a-card" onclick="window.location.href='product-page.html'">
+                    <div class="a-card-img"> <img src="/static/images/men/img12.jpg" alt=""> </div>
+                    <div class="a-card-info">
+                     <p class="a-text-title">Product title </p>
+                     <p class="a-text-body">Product description andd etails</p>
+                    </div>
+                     <div class="a-card-footer">
+                      <span class="a-text-title">₹ 1499.49</span>
+                     </div>
+                   </div>
+            </div>
+        </div>
+        <div class="row">
+            <div class="col-lg-3 col-md-3 col-sm-6">
+                <div class="a-card" onclick="window.location.href='product-page.html'">
+                    <div class="a-card-img"> <img src="/static/images/men/img13.jpg" alt=""> </div>
+                    <div class="a-card-info">
+                     <p class="a-text-title">Product title </p>
+                     <p class="a-text-body">Product description andd etails</p>
+                    </div>
+                     <div class="a-card-footer">
+                      <span class="a-text-title">₹ 1499.49</span>
+                     </div>
+                   </div>
+            </div>
+            <div class="col-lg-3 col-md-3 col-sm-6">
+                <div class="a-card" onclick="window.location.href='product-page.html'">
+                    <div class="a-card-img"> <img src="/static/images/men/img14.jpg" alt=""> </div>
+                    <div class="a-card-info">
+                     <p class="a-text-title">Product title </p>
+                     <p class="a-text-body">Product description andd etails</p>
+                    </div>
+                     <div class="a-card-footer">
+                      <span class="a-text-title">₹ 1499.49</span>
+                     </div>
+                   </div>
+            </div>
+            <div class="col-lg-3 col-md-3 col-sm-6">
+                <div class="a-card" onclick="window.location.href='product-page.html'">
+                    <div class="a-card-img"> <img src="/static/images/men/img11.jpg" alt=""> </div>
+                    <div class="a-card-info">
+                     <p class="a-text-title">Product title </p>
+                     <p class="a-text-body">Product description andd etails</p>
+                    </div>
+                     <div class="a-card-footer">
+                      <span class="a-text-title">₹ 1499.49</span>
+                     </div>
+                   </div>
+            </div>
+            <div class="col-lg-3 col-md-3 col-sm-6">
+                <div class="a-card" onclick="window.location.href='product-page.html'">
+                    <div class="a-card-img"> <img src="/static/images/men/img7.jpg" alt=""> </div>
+                    <div class="a-card-info">
+                     <p class="a-text-title">Product title </p>
+                     <p class="a-text-body">Product description andd etails</p>
+                    </div>
+                     <div class="a-card-footer">
+                      <span class="a-text-title">₹ 1499.49</span>
+                     </div>
+                   </div>
+            </div>
+        </div> {% endcomment %}
+      </div>
+      <!-- product end -->
+
+       <!-- bootom poster start -->
+       <div class="container-fluid bottom-poster mt-4">
+        <div class="row">
+          {% for a in menbottomimgData %}
+          <div class="col-lg-6 col-md-6 col-sm-12"> 
+            <img src="{{a.bottom_img}}" alt=""> 
+          </div>
+          {% endfor %}
+          {% comment %} <div class="col-lg-6 col-md-6 col-sm-12"> <img src="/static/gif/gif2.gif" alt=""></div> {% endcomment %}
+        </div>
+      </div>
+    <!-- bottom poster end -->
+
+      <!-- bottom-text start -->
+<div class="container-fluid">
+  <div class="row text-center mt-4" style=" color: black; background: rgb(36,0,0);
+  background: linear-gradient(90deg, rgba(36,0,0,1) 0%, rgba(252,252,252,1) 0%, rgba(236,255,79,1) 46%, rgba(255,255,255,1) 100%);  font-family: sans-serif; font-size: 28px; font-weight: 700;">
+    <h2 style="font-family:sans-serif">THE ASHION INDIA'S NO.1 BRAND </h2>
+  </div>
+  <div class="row text-center mt-2" style="color: black;" >
+    <h2> <SPAN style="font-weight: bold;">10 MILLION+</SPAN> CUSTOMERS IN ALL OVER NATION </h2>
+  </div>
+</div>
+<!-- bottom-text start -->
+
+ {% include "footer.html" %}

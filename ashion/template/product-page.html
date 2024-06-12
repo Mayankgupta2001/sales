@@ -1,0 +1,222 @@
+{% include "header.html" %}
+
+
+    <!-- main-nav start -->
+    <nav class="navbar navbar-expand-lg bg-body-tertiary"  >
+        <div class="container-fluid main-nav">
+          <a class="navbar-brand" href="index.html"><img src="images/logo.png" alt=""> </a>
+          <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+            <span class="navbar-toggler-icon"></span>
+          </button>
+          <div class="collapse navbar-collapse" id="navbarSupportedContent">
+            <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+              <li class="nav-item">
+                <a class="nav-link active" aria-current="page" href="men-page.html">Men</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link active" aria-current="page" href="women-page.html">Women</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link active"  aria-current="page"  href="popular-page.html" >Popular</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link active" aria-current="page" href="contactus-page.html">Contact</a>
+              </li>
+            </ul>
+            <form class="d-flex" role="search">
+                <input class="form-control me-2" type="search" placeholder="Search" aria-label="Search">
+                <button class="btn btn-outline-warning" type="submit"><i class="fa-solid fa-magnifying-glass"></i></button>
+            </form>
+            <div class="laptop-icon">
+              <i onclick="window.location.href='cart-page.html'" class="fa-solid fa-cart-shopping "></i>
+              <i onclick="window.location.href='profile-page.html'" class="fa-regular fa-user"></i>
+            </div>
+        </div>
+              <div class="mobile-nav-icon">
+                <i onclick="window.location.href='cart-page.html'" class="fa-solid fa-cart-shopping "></i>
+              <i onclick="window.location.href='profile-page.html'" class="fa-regular fa-user"></i>
+              </div>
+      </nav>
+    <!-- main-nav end -->
+      <div class="container">
+        <div class="row" style="background-color: rgba(185, 212, 212, 0.998);">
+            <marquee class="blink" style="font-weight: bold;"  behavior="slide" scrollamount="12" direction="left" framerate="30"> GET EXTRA 10% OFF ON 2999 RS+ SHOPPING   &   GET FREE SHIPPING ON FIRST ORDER</marquee>
+        </div>
+      </div>
+    
+      <!-- product start -->
+      <div class="container mt-5">
+        <div class="row">
+          <div class="col-lg-3 col-md-12 col-sm-12 img1">
+            <img src="images/men/img14.jpg" class="img-fluid" alt="Product Image">
+          </div>
+          <div class="col-lg-3 img2">
+            <img src="images/men/img9.jpg" class="img-fluid" alt="Product Image">
+          </div>
+          <div class="col-lg-6 col-md-12 col-sm-12 p-text" >
+            <h2 style="font-weight: 800;">Solid Jackets Combo</h2>
+            <p style="font-weight: bold;">Price:1999.00</p>
+            <p>100% cotton IcLd. all taxes </p>
+            <div class="mb-3">
+              Rating:
+              <span class="text-warning">&#9733;</span>
+              <span class="text-warning">&#9733;</span>
+              <span class="text-warning">&#9733;</span>
+              <span class="text-warning">&#9733;</span>
+              <span class="text-muted">&#9733;</span>
+            </div>
+            
+            <div class="row">
+              <div class="col-lg-6">
+                <div class="form-group">
+              <label for="sizeSelect">Size:</label>
+              <select class="form-control" id="sizeSelect">
+                <option>Small</option>
+                <option>Medium</option>
+                <option>Large</option>
+              </select>
+            </div>
+              </div>
+               <div class="col-lg-6">
+                 <div class="form-group">
+              <label for="quantityInput">Quantity:</label>
+              <input type="number" class="form-control" id="quantityInput" value="1" min="1">
+            </div>
+               </div>
+            </div>
+            <div >
+                <h4>Product Description</h4>
+                <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Integer nec odio. Praesent libero. Sed cursus ante dapibus diam. Sed nisi.</p>
+              </div>
+            
+            <button type="button" onclick="window.location.href='cart-page.html'" class="btn btn-primary btn-lg btn-block mt-3">Add to Cart</button>
+            <button type="button" onclick="window.location.href='cart-page.html'" class="btn btn-outline-primary btn-lg btn-block mt-3">Buy Now</button>
+          </div>
+        </div>  
+      </div>
+      <!-- product end -->
+      <div class="container">
+        <div class="row text-center mt-5" style="background: rgb(36,0,0);
+      background: linear-gradient(90deg, rgba(36,0,0,1) 0%, rgba(252,252,252,1) 0%, rgba(236,255,79,1) 46%, rgba(255,255,255,1) 100%);">
+        <h2>RELATED PRODUCTS</h2>
+      </div>
+      </div>
+      <!-- related product -->
+      <div class="container mt-5">
+        <div  class="row">
+          <div class="col-lg-3 col-md-3 col-sm-6">
+            <div class="a-card">
+              <div class="a-card-img"> <img src="images/men/img9.jpg" alt=""> </div>
+              <div class="a-card-info">
+               <p class="a-text-title">Product title </p>
+               <p class="a-text-body">Product description andd etails</p>
+              </div>
+               <div class="a-card-footer">
+                <span class="a-text-title">₹ 1499.49</span>
+               </div>
+             </div>
+          </div>
+          <div class="col-lg-3 col-md-3 col-sm-6">
+            <div class="a-card">
+              <div class="a-card-img"><img src="images/product card/img-2.png" alt=""></div>
+              <div class="a-card-info">
+               <p class="a-text-title">Product title </p>
+               <p class="a-text-body">Product description and details</p>
+              </div>
+               <div class="a-card-footer">
+                <span class="a-text-title">₹ 459.49</span>
+               </div>
+             </div>
+          </div>
+          <div class="col-lg-3 col-md-3 col-sm-6">
+            <div class="a-card">
+              <div class="a-card-img"><img src="images/men/img2.jpg" alt=""></div>
+              <div class="a-card-info">
+               <p class="a-text-title">Product title </p>
+               <p class="a-text-body">Product description and details</p>
+              </div>
+               <div class="a-card-footer">
+                <span class="a-text-title">₹ 699.89</span>
+               </div>
+             </div>
+          </div>
+          <div class="col-lg-3 col-md-3 col-sm-6">
+            <div class="a-card">
+              <div class="a-card-img"><img src="images/women/img2.jpg" alt=""></div>
+              <div class="a-card-info">
+               <p class="a-text-title">Product title </p>
+               <p class="a-text-body">Product description and details</p>
+              </div>
+               <div class="a-card-footer">
+                <span class="a-text-title">₹ 2999.49</span>
+               </div>
+             </div>
+          </div>
+        </div><br><br>
+  
+        <div class="row">
+          <div class="col-lg-3 col-md-3">
+            <div class="a-card">
+              <div class="a-card-img"><img src="images/women/img7.jpg" alt=""></div>
+              <div class="a-card-info">
+               <p class="a-text-title">Product title </p>
+               <p class="a-text-body">Product description and details</p>
+              </div>
+               <div class="a-card-footer">
+                <span class="a-text-title">₹ 299.49</span>
+               </div>
+             </div>
+          </div>
+          <div class="col-lg-3 col-md-3">
+            <div class="a-card">
+              <div class="a-card-img"><img src="images/men/img5.jpg" alt=""></div>
+              <div class="a-card-info">
+               <p class="a-text-title">Product title </p>
+               <p class="a-text-body">Product description and details</p>
+              </div>
+               <div class="a-card-footer">
+                <span class="a-text-title">₹ 999.09</span>
+               </div>
+             </div>
+          </div>
+          <div class="col-lg-3 col-md-3">
+            <div class="a-card">
+              <div class="a-card-img"><img src="images/women/img6.jpg" alt=""></div>
+              <div class="a-card-info">
+               <p class="a-text-title">Product title </p>
+               <p class="a-text-body">Product description and details</p>
+              </div>
+               <div class="a-card-footer">
+                <span class="a-text-title">₹ 799.00</span>
+               </div>
+             </div>
+          </div>
+          <div class="col-lg-3 col-md-3">
+            <div class="a-card">
+              <div class="a-card-img"><img src="images/men/img3.jpg" alt=""></div>
+              <div class="a-card-info">
+               <p class="a-text-title">Product title </p>
+               <p class="a-text-body">Product description and details</p>
+              </div>
+               <div class="a-card-footer">
+                <span class="a-text-title">₹ 2499.49</span>
+               </div>
+             </div>
+          </div>
+        </div>
+      </div>
+      
+ <!-- bootom poster start -->
+ <div class="container-fluid bottom-poster mt-3">
+  <div class="row">
+    <div class="col-lg-6 col-md-6 col-sm-12"> <img src="images/bottom-posters/DESKTOP-mid-size-breezyvests--1--1710481719.jpg" alt=""> </div>
+    <div class="col-lg-6 col-md-6 col-sm-12"> <img src="images/bottom-posters/MidSize-DESKTOP-b1g1-common--1--1710481447.jpg" alt=""></div>
+  </div>
+  <div class="row mt-2">
+    <div class="col-lg-6 col-md-6 col-sm-12"> <img src="images/bottom-posters/MidSize-DESKTOP-BF-women--1--1710481445.jpg" alt=""> </div>
+    <div class="col-lg-6 col-md-6 col-sm-12"> <img src="images/bottom-posters/Screenshot 2024-03-15 222728.png" alt=""> </div>
+  </div>
+</div>
+<!-- bottom poster end -->
+      
+{% include "footer.html" %}

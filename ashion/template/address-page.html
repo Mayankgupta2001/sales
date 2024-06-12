@@ -1,0 +1,100 @@
+
+{% include "header.html" %}
+
+    <div class="container process-banner mt-2">
+        <div class="row">
+          <img src="images/order-process/step2.png" alt="">
+        </div>
+      </div>
+      <hr>
+    <!-- address start -->
+    <div class="container">
+        <div class="row">
+            <div class="col-lg-6">
+                <h2>Fill Addres</h2>
+                <form>
+                    <div class="form-group">
+                      <label for="salutation">Salutation:</label>
+                      <select class="form-control" id="salutation">
+                        <option>Mr.</option>
+                        <option>Mrs.</option>
+                      </select>
+                    </div>
+                    <div class="form-group">
+                      <label for="first-name">First Name:</label>
+                      <input type="text" class="form-control" id="first-name" placeholder="Enter first name">
+                    </div>
+                    <div class="form-group">
+                      <label for="last-name">Last Name:</label>
+                      <input type="text" class="form-control" id="last-name" placeholder="Enter last name">
+                    </div>
+                     <div class="form-group">
+                      <label for="number">Number:</label>
+                      <input type="text" class="form-control" id="address" placeholder="Enter Number">
+                    </div>
+                    <div class="form-group">
+                      <label for="number">Email:</label>
+                      <input type="email" class="form-control" id="address" placeholder="Enter Email">
+                    </div>
+                    <div class="form-group">
+                      <label for="address">Address:</label>
+                      <input type="text" class="form-control" id="address" placeholder="Enter address">
+                    </div>
+                    <div class="form-group">
+                      <label for="city">City:</label>
+                      <input type="text" class="form-control" id="city" placeholder="Enter city">
+                    </div>
+                    <div class="form-group">
+                      <label for="country">Country:</label>
+                      <input type="text" class="form-control" id="country" placeholder="Enter country">
+                    </div>
+                    <!-- <button type="submit" class="btn btn-primary">Submit</button> -->
+                  </form>
+            </div>
+            <div class="col-lg-6">
+                <h2>Special Offer</h2>
+                <p>Get 20% off on your next purchase! Enter a coupon code below to avail the offer.</p>
+                
+                <form id="coupon-form">
+                    <div class="input-group mb-3">
+                      <input type="text" class="form-control" id="coupon-input" placeholder="Enter coupon code">
+                      <div class="input-group-append">
+                        <button class="btn btn-primary" type="submit">Apply</button>
+                      </div>
+                    </div>
+                  </form>
+                  <h2 style="font-weight: bold;">Price Details (3 items)</h2>
+        <table class="table">
+            <tbody>
+              <tr>
+                <td style="font-weight: bold;" >Total MRP:</td>
+                <td style="font-weight:600;"> 2972.00 RS</td>
+              </tr>
+              <tr>
+                <td style="font-weight: bold;" >Discount:</td>
+                <td style="font-weight:600;">310.00</td>
+              </tr>
+              <tr>
+                <td style="font-weight: bold;">Shipping:</td>
+                <td style="font-weight:600;">FREE</td>
+              </tr>
+              <tr>
+                <td style="font-weight: bold;">Cart Total:</td>
+                <td style="font-weight:600;">3562.00</td>
+              </tr>
+              <tr>
+                <td style="font-weight: bold;">Total Amount:</td>
+                <td style="font-weight:600;">3562.00 only</td>
+              </tr>
+            </tbody>
+          </table>
+          <p style="text-align: center; font-weight: 700; background-color: #8bed7e;">Hurray!!!! You saved 356rs on this order </p>
+          <button style="font-family: monospace; width: 100%;" type="submit" onclick="window.location.href='payment-page.html'" class="btn btn-success">PAY NOW</button>
+            </div>
+        </div>
+            </div>
+        </div>
+        
+    </div>
+    <!-- address end -->
+    {% include "footer.html" %}
